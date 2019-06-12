@@ -11,6 +11,7 @@ namespace ExampleWithNG
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("First branch");
             Pix img = Pix.LoadFromFile("images/i1.jpg");
             TesseractEngine engine = new TesseractEngine("./tessdata", "eng", EngineMode.Default);
             Page page = engine.Process(img, PageSegMode.Auto);
